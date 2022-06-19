@@ -14,7 +14,7 @@ public class GUI {
 
          */
 
-        int ROZMIAR_PLANSZY = 16;
+        final int ROZMIAR_PLANSZY = 16;
 
         JFrame frame = new JFrame("2048 klon");
         JPanel panel_glowny = new JPanel();
@@ -41,8 +41,9 @@ public class GUI {
         panel_glowny.add(panel_plansza);
         panel_glowny.add(Wynik_tekst);
 
-
+        frame.pack();
 
         frame.setVisible(true);
     }
+
 }
